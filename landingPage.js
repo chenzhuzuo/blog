@@ -40,7 +40,14 @@
                     header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
                 }
             });
-            
+            // FAQ交互
+const faqItems = document.querySelectorAll('.faq-item');
+faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    question.addEventListener('click', () => {
+        item.classList.toggle('active');
+    });
+});
             // 卡片悬停效果增强
             const cards = document.querySelectorAll('.elementor-card, .article-card, .video-card');
             cards.forEach(card => {
@@ -55,12 +62,5 @@
                 });
             });
         });
-// FAQ交互
-const faqItems = document.querySelectorAll('.faq-item');
-faqItems.forEach(item => {
-    const question = item.querySelector('.faq-question');
-    question.addEventListener('click', () => {
-        item.classList.toggle('active');
-    });
-});
+
    
