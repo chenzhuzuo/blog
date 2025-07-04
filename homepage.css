@@ -203,6 +203,14 @@
             overflow: hidden;
             clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
         }
+.full-width-container {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
         
         .banner:before {
             content: '';
